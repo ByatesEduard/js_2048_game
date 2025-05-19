@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/63d4b6e5-fbe5-4344-8678-c1e771a8b9a5)
+
+
 # 2048 game
 
 Hey! Are you ready for a real hard check of your JavaScript skills, ninja?

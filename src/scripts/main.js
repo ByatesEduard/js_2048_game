@@ -36,6 +36,7 @@ const startBtn = document.body.querySelector('.start');
 
 function render() {
   const state = game.getState();
+
   let index = 0;
 
   messageStart.classList.add('hidden');
@@ -44,7 +45,18 @@ function render() {
 
   for (let row = 0; row < 4; row++) {
     for (let col = 0; col < 4; col++) {
-      cells[index].textContent = state[row][col] || '';
+      const value = state[row][col];
+      const cell = cells[index];
+
+      cell.className = 'field-cell';
+
+      if (value !== 0) {
+        cell.textContent = value;
+        cell.classList.add(`field-cell--${value}`);
+      } else {
+        cell.textContent = '';
+      }
+
       index++;
     }
   }
@@ -60,8 +72,8 @@ function render() {
   }
 }
 
-startBtn.addEventListener('click', (e) => {
-  game.restart();
+startBtn.addEventListener('click', () => {
+  game.start();
   render();
 
   startBtn.classList.remove('start');

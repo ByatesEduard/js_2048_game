@@ -117,11 +117,11 @@ class Game {
         newCol.push(0);
       }
 
-      for (let row = 3, i = 0; row >= 0; row--, i++) {
-        if (this.state[row][col] !== newCol[i]) {
+      for (let row = 0; row < 4; row++) {
+        if (this.state[row][col] !== newCol[row]) {
           moved = true;
         }
-        this.state[row][col] = newCol[i];
+        this.state[row][col] = newCol[row];
       }
     }
 

@@ -1,6 +1,4 @@
-
-
-const Game = require(`../modules/Game.class`);
+import Game from '../modules/Game.class.js';
 
 const game = new Game();
 
@@ -70,4 +68,3 @@ startBtn.addEventListener('click', (e) => {
   startBtn.classList.add('restart');
   startBtn.textContent = 'Restart';
 });
-

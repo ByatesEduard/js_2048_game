@@ -1,13 +1,5 @@
 'use strict';
 
-<<<<<<< HEAD
-/**
- * This class represents the game.
- * Now it has a basic structure, that is needed for testing.
- * Feel free to add more props and methods if needed.
- */
-=======
->>>>>>> main
 class Game {
   /**
    * Creates a new game instance.
@@ -24,16 +16,6 @@ class Game {
    * initial state.
    */
   constructor(initialState) {
-<<<<<<< HEAD
-    // eslint-disable-next-line no-console
-    console.log(initialState);
-  }
-
-  moveLeft() {}
-  moveRight() {}
-  moveUp() {}
-  moveDown() {}
-=======
     this.state = initialState || [
       [0, 0, 0, 0],
       [0, 0, 0, 0],
@@ -184,55 +166,14 @@ class Game {
 
     this.afterMove(moved);
   }
->>>>>>> main
 
-  /**
-   * @returns {number}
-   */
-<<<<<<< HEAD
-  getScore() {}
-=======
   getScore() {
     return this.score;
   }
->>>>>>> main
 
-  /**
-   * @returns {number[][]}
-   */
-<<<<<<< HEAD
-  getState() {}
-=======
   getState() {
     return this.state;
   }
->>>>>>> main
-
-  /**
-   * Returns the current game status.
-   *
-   * @returns {string} One of: 'idle', 'playing', 'win', 'lose'
-   *
-   * `idle` - the game has not started yet (the initial state);
-   * `playing` - the game is in progress;
-   * `win` - the game is won;
-   * `lose` - the game is lost
-   */
-<<<<<<< HEAD
-  getStatus() {}
-
-  /**
-   * Starts the game.
-   */
-  start() {}
-
-  /**
-   * Resets the game.
-   */
-  restart() {}
-
-  // Add your own methods here
-=======
 
   getStatus() {
     return this.status;
@@ -324,7 +265,6 @@ class Game {
       this.checkLose();
     }
   }
->>>>>>> main
 }
 
 module.exports = Game;

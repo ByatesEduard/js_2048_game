@@ -36,7 +36,11 @@
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0",
     "parcel": "^2.12.0",
+<<<<<<< HEAD
     "prettier": "^3.5.3",
+=======
+    "prettier": "^3.3.2",
+>>>>>>> main
     "stylelint": "^16.7.0",
     "stylelint-scss": "^6.4.1"
   },
@@ -49,7 +53,11 @@
       "bem": false
     },
     "tests": {
+<<<<<<< HEAD
       "jest": true,
+=======
+      "jest": false,
+>>>>>>> main
       "backstop": false,
       "cypress": true
     }
